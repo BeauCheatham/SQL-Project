@@ -1,9 +1,9 @@
 # Introduction
-Explore the market for data analyst internships! Focusing on remote and in-Texas roles, this project explores top-paying jobs, in-demand skills, and where high demand meets high salary for interns in data analytics.
+Explore the market for data analyst internships! Focusing on remote and in-Texas roles, this project explores top-paying jobs, in demand skills, and where high demand meets high salary for interns in data analytics.
 
 SQL queries? Check them out here: [project_sql folder](/project_sql/)
 # Background
-Driven by a desire to explore the job market I will be entering, this project was born from a desire to pinpoint top-paid and in-demand skills through data analytics. 
+Driven by a desire to explore the job market I will be entering, this project was born from a desire to pinpoint top-paid and in demand skills through data analytics. 
 
 Data hails from [this SQL course](hittps://lukebarousse.com/sql). It's packed with insights on job titles, salaries, locations, and essential skills.
 ### The questions I wanted to answer through my SQL queries were:
@@ -23,7 +23,7 @@ For my deep dive into the data analyst job market, I utilized several key tools:
 Each query for this project aimed at investigating specific aspects of the data analyst job market. Here's how I approached each question:
 
 ### 1. Top-Paying Data Analyst Internships
-To identify the highest-paying roles, I filtered data analyst interships by average yearly salary and location, focusing on remote jobs and jobs within Texas. This query highlights the high paying opportunities in the field.
+To identify the highest-paying roles, I filtered data analyst internships by average yearly salary and location, focusing on remote jobs and jobs within Texas. This query highlights the high paying opportunities in the field.
 
 ```sql
 SELECT
@@ -81,7 +81,8 @@ ORDER BY
     skill_count DESC
 LIMIT 5
 ```
-
+Here's the breakdown of the most in demand skills of 2023:
+- **Most Desirable Skills:** There were 5 clear winners in terms of demand: SQL, Python, SAS, R, and Java. These skills were the most commonly required by top internships in the field. 
 ### 3. Top-Paying Skills
 To identify the top-paying skills, I filtered the average salaries associated with each skill, finding those with the highest average values. This query highlights the pay associated with these skills.
 
@@ -101,8 +102,11 @@ GROUP BY
 ORDER BY
     avg_salary DESC
 ```
+Here's the breakdown of the top-paying skills for data analyst internships in 2023:
+- **High-Paying Opportunities** The highest average salaries per skills ranged from $90,000 - $115,000. 
+- **Core Skills Remain in Demand** Core languages such as C++, Java, and C# remain a valuable skill for prospective data analysts. 
 ### 4. Most Optimal Skills
-To identify the most optimal skills, I filtered the skills by demand, followed by salary, finding the skills offer the most value to a new entrant into this market. This query highlights the most optimal skills for a new entrant to the CS job market.
+To identify the most optimal skills, I filtered the skills by demand, followed by salary, finding the skills offer the most value to a new entrant into this market. This query highlights the most optimal skills for a new entrant to the data analytics job market.
 
 ```sql
 WITH skills_demand AS (
@@ -164,5 +168,22 @@ ORDER BY
     avg_salary DESC
 LIMIT 25
 ```
+Here's the breakdown of the most optimal skills for data analyst internships in 2023:
+- **High Value Skills By Demand** The most valuable skills were clear: SQL and Python dominated demand with 68 and 65 jobs requiring each respective skill. The next most valuable skills include R, Excel, Oracle, and Tableau.
+- **High Value Skills By Salary** The highest paying skills (exluding outliers with low demand): Java stands as the highest value skill with an average salary of $94,404 across its internships. The next skills include Azure, SAS, R, and Python with salaries ranging from ~$73,690-$80,500 for these skills.
 # What I Learned
+
+Throughout this project, I've developed my SQL expertise immensely:
+
+- **Complex Query Crafting** Mastered the usage of advanced SQL, merging tables and the usage of WITH clauses.
+- **Data Aggregation** Gained knowledge of aggregate functions such as COUNT() and AVG() and how to perform useful data analysis with them.
+- **Analytic Inquiry** Developed the ability to transform questions into actionable, insightful SQL queries. 
 # Conclusions
+### Insights
+1. **Top-Paying Data Analyst Internships**: A high range of salaries is available to interns in the data analysis industry with salaries reaching up to $130,000.
+2. **Highest Demand Skills**: The skills highest in demand include SQL, Python, SAS, R, and Java.
+3. **High Paying Skills**: The highest average pay for skills ranges from $90,000 - $115,000. Core skills such as C++, Java, and C# are valuable skills.
+4. **Most Optimal Skills**: The most in demand skills across data analyst internships are SQL and Python. The skill with the highest average salary across these internships is Java. These three skills represent the most optimal skills to learn for a prospective data analyst intern.
+
+### Closing Thoughts
+This project improved my SQL skills and provided valuable insights into the market for interns in the field of data analytics. The findings from the analysis serve as a guide for prioritizing skill development and job search efforts. Aspiring interns in the field can better position themselves within the competitive job market by focusing on high-demand, high-salary skills. This exploration highlights the importance of continuous learning and adaptation to emerging trends in the field of data analytics. 
