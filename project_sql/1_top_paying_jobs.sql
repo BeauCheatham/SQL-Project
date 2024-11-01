@@ -1,8 +1,8 @@
 /*
 Question: What are the top-paying data analyst jobs?
-- Identify the top 10 highest-paying Data Analyst roles that are available remotely.
+- Identify the top 10 highest-paying Data Analyst roles that are available remotely or in Texas.
 - Focuses on job postings with specified salaries (remove nulls).
-- Why? Highlight the top-paying internship opportunities for data analysts available to me either remotely or in Texas.
+- Why? Highlight the top-paying internship opportunities for data analysts available either remotely or in Texas.
 */
 
 SELECT
